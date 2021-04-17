@@ -1,6 +1,17 @@
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
 img {
     height: 75px;
     cursor: pointer;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(3, 3, 3);
+    margin: 20px 0 10px 0;
 }
 
 input[type=search] {
@@ -112,17 +123,236 @@ nav {
 
 .left-pane {
     grid-area: left-pane;
+    padding: 0 30px 0 80px;
+}
+
+.player {
     display: flex;
     justify-content: flex-end;
-    flex-wrap: wrap;
+    align-content: center;
 }
-
 iframe {
     height: 700px;
-    width: 1300px;
-    padding-right: 25px;
+    width: 100%;
 }
 
+.info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 75px 100px;
+    grid-template-areas: 
+        "video-name like-bar"
+        "sirius subscribe";
+}
+
+.video-name {
+    grid-area: video-name;
+    position: relative;
+}
+
+.video-name:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: rgb(175, 175, 175);
+    bottom: 0;
+    width: 100%;
+}
+
+
+.video-name p {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+}
+
+.like-bar {
+    grid-area: like-bar;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.like-bar:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: rgb(175, 175, 175);
+    bottom: 0;
+    width: 100%;
+}
+
+.like-bar img {
+    height: 40px;
+}
+
+.sirius {
+    grid-area: sirius;
+    padding: 10px 0 20px 0;
+}
+
+
+.sirius img {
+    float: left;
+    height: 50px;
+    padding: 15px;
+}
+
+.sirius h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(3, 3, 3);
+    margin: 10px 0 0 10px;
+}
+
+.sirius p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+    margin: 10px;
+}
+
+.subscribe {
+    grid-area: subscribe;
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subscribe button {
+    height: 40px;
+    width: 105px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.video-short p {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 0 5px 85px;
+    color: black;
+}
+
+.show {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+    padding: 30px 0 20px 85px;
+    position: relative;
+}
+
+.show:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: rgb(175, 175, 175);
+    bottom: 0;
+    width: 85%;
+
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.comment-total img {
+    height: 20px;
+    margin-left: 40px;
+}
+
+.add-comment {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.user-photo {
+    height: 40px;
+    float: left;
+}
+
+.add-comment p {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+    margin-left: 20px;
+    position: relative;
+}
+
+.comment {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-top: 30px;
+}
+
+.photo img {
+    height: 40px;
+}
+
+.comment-text {
+    padding-left: 15px;
+}
+
+.comment-text h4 {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+}
+
+.comment-text span {
+    color: rgb(96, 96, 96);
+    font-weight: 400;
+}
+
+.comment-text p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.comment-links img {
+    height: 25px;
+}
+
+.comment-links span {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.replies {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid rgb(6, 95, 212);
+    margin-right: 10px;
+}
+
+.replies span {
+    color: rgb(6, 95, 212);
+    font-size: 14px;
+    font-weight: 600;
+}
 .right-pane {
     grid-area: right-pane;
     display: flex;
@@ -137,7 +367,6 @@ iframe {
     align-items: center;
 }
 .link-btn {
-    font-family: Roboto, Arial, sans-serif;
     font-size: 13px;
     border-radius: 16px;
     color: rgb(3, 3, 3);
@@ -163,7 +392,6 @@ iframe {
 }
 
 .right-pane h3 {
-    font-family: Roboto, Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: rgb(3, 3, 3);
@@ -171,7 +399,6 @@ iframe {
 }
 
 .right-pane p {
-    font-family: Roboto, Arial, sans-serif;
     font-size: 13px;
     font-weight: 400;
     margin: 5px;

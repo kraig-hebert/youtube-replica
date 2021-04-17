@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>YouTube Replica</title>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -17,9 +19,9 @@
                     <img class="left-link" id="logo" src="assets/logo.png" alt="YouTube Logo">
                 </div><!-- end left-links -->
                 <div class="form">
-                        <input type="search" placeholder="Search" results="0" />
-                        <button id="search"><img id="mag-glass" src="assets/mag-glass.png" alt="Search Icon"></button>
-                        <img id="mic" src="assets/mic.png" alt="Mic Icon">
+                    <input type="search" placeholder="Search" results="0" />
+                    <button id="search"><img id="mag-glass" src="assets/mag-glass.png" alt="Search Icon"></button>
+                    <img id="mic" src="assets/mic.png" alt="Mic Icon">
                 </div><!-- end form -->
                 <div class="right-links">
                     <img class="right-link" id="cam" src="assets/camera.png" alt="Create Icon">
@@ -31,11 +33,163 @@
         </header>
         <div class="main-body">
             <section class="left-pane">
-                <iframe src="https://www.youtube.com/embed/y1wJAWdAR1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h2>Chris Robinson Brotherhood - "It's All Over Now Baby Blue" (Bob Dylan Cover) [LIVE @ SiriusXM]</h2>
-                <br>
-                <p>1,235,928 views &middot; Aug 12, 2016</p>
-            </section>
+                <div class="player">
+                    <iframe src="https://www.youtube.com/embed/y1wJAWdAR1w" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div><!-- end player -->
+                <div class="info">
+                    <div class="video-name">
+                        <h2>Chris Robinson Brotherhood - "It's All Over Now Baby Blue" (Bob Dylan Cover) [LIVE @
+                            SiriusXM]</h2>
+                        <p>1,236,111 views &middot; Aug 12, 2016</p>
+                    </div><!-- end video-name -->
+                    <div class="like-bar">
+                        <img src="assets/like-bar.png" id="like-bar" alt="Like-Bar">
+                    </div><!-- end like-bar -->
+                    <div class="sirius">
+                        <img src="assets/sirius.png" id="sirius" alt="Sirius">
+                        <h3>SiriusXM</h3>
+                        <p>1.02M subscribers</p>
+                    </div><!-- end sirius -->
+                    <div class="subscribe">
+                        <button>SUBSCRIBE</button>
+                    </div><!-- end subscribe-->
+                </div><!-- end info-->
+                <div class="video-short">
+                    <p>Chris Robinson Brotherhood stopped by the SiriusXM studios in New York and performed their</p>
+                    <p>cover of Bob Dylan's "It's All Over Now Baby Blue".</p>
+                </div><!-- end video-short -->
+                <div class="show">
+                    <p>SHOW MORE</p>
+                </div><!-- end show -->
+                <section class="comment-section">
+                    <div class="comment-total">
+                        <span>802 Comments</span>
+                        <img src="assets/sort.png" id="slashes" alt="Sort">
+                    </div><!-- end comment-total -->
+                    <div class="add-comment">
+                        <img src="assets/screen.png" class="user-photo"  alt="User Photo">
+                        <p>Add a public comment..</p>
+                    </div><!-- end add-comment -->
+                    <div class="comments">
+                        <div class="comment">
+                            <div class="photo">
+                                <img src="assets/screen-d.png" alt="User Photo">
+                            </div><!-- end photo -->
+                            <div class="comment-text">
+                                <h4>DirtTrax68<span> 1 year ago</span></h4>
+                                <p>Neal could get the notes out of a guitar. Man what a loss! RIP Neal Casal</p>
+                                <div class="comment-links">
+                                    <img src="assets/thumbs-up.png" alt="Like">
+                                    <span>104</span>
+                                    <img src="assets/thumbs-down.png" alt="Dislike">
+                                    <span>REPLY</span>
+                                </div><!-- end comment-links -->
+                                <div class="replies">
+                                    <div class="arrow-down"></div>
+                                    <span>View 9 replies</span>
+                                </div><!-- end replies-->
+                            </div><!-- end comment-text -->
+                        </div><!-- end comment-->
+                        <div class="comment">
+                            <div class="photo">
+                                <img src="assets/screen-t.png" alt="User Photo">
+                            </div><!-- end photo -->
+                            <div class="comment-text">
+                                <h4>Timothy Ehler<span> 3 years ago</span></h4>
+                                <p>During the 80's, the Grateful Dead would close shows with this tune, and we would sing: Its' all over now</p>
+                                <div class="comment-links">
+                                    <img src="assets/thumbs-up.png" alt="Like">
+                                    <span>163</span>
+                                    <img src="assets/thumbs-down.png" alt="Dislike">
+                                    <span>REPLY</span>
+                                </div><!-- end comment-links -->
+                                <div class="replies">
+                                    <div class="arrow-down"></div>
+                                    <span>View 13 replies</span>
+                                </div><!-- end replies-->
+                            </div><!-- end comment-text -->
+                        </div><!-- end comment-->
+                        <div class="comment">
+                            <div class="photo">
+                                <img src="assets/screen-1.png" alt="User Photo">
+                            </div><!-- end photo -->
+                            <div class="comment-text">
+                                <h4>hetane<span> 4 years ago</span></h4>
+                                <p>for a moment i thought all of them are the same person..</p>
+                                <div class="comment-links">
+                                    <img src="assets/thumbs-up.png" alt="Like">
+                                    <span>571</span>
+                                    <img src="assets/thumbs-down.png" alt="Dislike">
+                                    <span>REPLY</span>
+                                </div><!-- end comment-links -->
+                                <div class="replies">
+                                    <div class="arrow-down"></div>
+                                    <span>View 50 replies</span>
+                                </div><!-- end replies-->
+                            </div><!-- end comment-text -->
+                        </div><!-- end comment-->
+                        <div class="comment">
+                            <div class="photo">
+                                <img src="assets/screen-2.png" alt="User Photo">
+                            </div><!-- end photo -->
+                            <div class="comment-text">
+                                <h4>WiserInTime<span> 4 years ago</span></h4>
+                                <p>One of the great and underappreciated voices in rock. That's my 2 cents.</p>
+                                <div class="comment-links">
+                                    <img src="assets/thumbs-up.png" alt="Like">
+                                    <span>167</span>
+                                    <img src="assets/thumbs-down.png" alt="Dislike">
+                                    <span>REPLY</span>
+                                </div><!-- end comment-links -->
+                                <div class="replies">
+                                    <div class="arrow-down"></div>
+                                    <span>View 15 replies</span>
+                                </div><!-- end replies-->
+                            </div><!-- end comment-text -->
+                        </div><!-- end comment-->
+                        <div class="comment">
+                            <div class="photo">
+                                <img src="assets/screen-j.png" alt="User Photo">
+                            </div><!-- end photo -->
+                            <div class="comment-text">
+                                <h4>jamiepaton5<span> 3 years ago</span></h4>
+                                <p>the keyboard is magic on this, he gets into it and almost looks like a lead guitarist bending notes.</p>
+                                <div class="comment-links">
+                                    <img src="assets/thumbs-up.png" alt="Like">
+                                    <span>6</span>
+                                    <img src="assets/thumbs-down.png" alt="Dislike">
+                                    <span>REPLY</span>
+                                </div><!-- end comment-links -->
+                                <div class="replies">
+                                    <div class="arrow-down"></div>
+                                    <span>View 2 replies</span>
+                                </div><!-- end replies-->
+                            </div><!-- end comment-text -->
+                        </div><!-- end comment-->
+                        <div class="comment">
+                            <div class="photo">
+                                <img src="assets/screen-r.png" alt="User Photo">
+                            </div><!-- end photo -->
+                            <div class="comment-text">
+                                <h4>Richard Grandmont<span> 1 year ago</span></h4>
+                                <p>Dig that ultra-groovy "Up On Cripple Creek" beat!</p>
+                                <div class="comment-links">
+                                    <img src="assets/thumbs-up.png" alt="Like">
+                                    <span>14</span>
+                                    <img src="assets/thumbs-down.png" alt="Dislike">
+                                    <span>REPLY</span>
+                                </div><!-- end comment-links -->
+                                <div class="replies">
+                                    <div class="arrow-down"></div>
+                                    <span>View 8 replies</span>
+                                </div><!-- end replies-->
+                            </div><!-- end comment-text -->
+                        </div><!-- end comment-->
+                    </div><!-- end comments -->
+                </section><!-- end comment-section -->
+            </section><!-- end left-pane -->
             <section class="right-pane">
                 <div id="link-bar">
                     <button class="link-btn">All</button>
@@ -99,8 +253,9 @@
                     <p>Blutarsky</p>
                     <p>4.7M views &middot; 11 years ago</p>
                 </article>
-            </section>
+            </section><!-- end right-pane -->
         </div><!-- end main-body -->
     </div><!-- end container -->
 </body>
+
 </html>
